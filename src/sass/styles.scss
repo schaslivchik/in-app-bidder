@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+.lanes {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  overflow: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+  .lane__item {
+    position: relative;
+    min-width: 42%;
+    margin: 0 5px;
+    overflow: auto;
+    &:first-child {
+      margin-left: 10px;
+    }
+    .lane__item-fixed {
+      position: absolute;
+      width: 100%;
+      z-index: 99999;
+    }
+    .lane__items-dynamic {
+      margin-top: 260px;
+    }
+  }
+}
